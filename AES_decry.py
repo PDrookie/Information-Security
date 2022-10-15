@@ -5,7 +5,7 @@ import base64
 
 def decry(key):
     cipher = AES.new(key.encode("utf8"), AES.MODE_ECB)
-    plain_text = cipher.decrypt(base64.b64decode("1ㄌ6zvA3lnMuWHoE5PpaJheQ==")).rstrip(b"\0").decode("utf8")
+    plain_text = cipher.decrypt(base64.b64decode("16zvA3lnMuWHoE5PpaJheQ==")).rstrip(b"\0").decode("utf8")
     return plain_text
 
 key = "s{}hv{}4z*{}7d*t{}Ce"
